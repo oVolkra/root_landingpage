@@ -1,0 +1,240 @@
+/*Generales */
+
+:root {
+    /* color */
+    --bg-color: #e9e7e3;
+    --primary-color: #2f6b53;
+    --card-color: #e7f0e9;
+    
+    /* padding */
+    --padding-section: 50px;
+    
+    /* border-radius */
+    --radius-btn: 25px;
+    --radius-card: 20px;
+    --radius-titles: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    background-color: --bg-color;
+}
+
+h1, h2, h3 {
+    margin-top: 8px;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+p {
+    color: #838883;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+.tagline {
+    display: block;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.destacar {
+    color:#2f6b53;
+}
+
+.numero {
+    display: block;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* Header */
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 24px;
+}
+
+.site-header .container > a {
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.site-header nav a{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/*Hero */
+
+.hero {
+    padding: var(--padding-section);
+}
+
+.hero-descripcion {
+    max-width: 400px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.boton-primario {
+    background-color: var(--primary-color);
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: var(--radius-btn);
+}
+
+.tarjeta-hero {
+    background-color: var(--card-color);
+    text-align: center;
+    padding: 40px 50px;
+    border-radius: var(--radius-card);
+}
+
+.tarjeta-hero .numero {
+    font-size: 2.8rem;
+}
+
+.tarjeta-hero p{
+    font-size: 1.2rem;
+}
+
+/*Catalogo */
+
+.catalogo {
+    padding: var(--padding-section); /* AGREGAR PADDING A LA SECCION COMPLETA */
+}
+
+.tarjetas-catalogo{
+    display: flex;
+    gap: 50px;
+}
+
+.titulo-catalogo{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 8px;
+    border-radius: var(--radius-titles);
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.tarjeta-catalogo {
+    flex: 1;
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: var(--radius-card);
+}
+
+
+/*Nosotros */
+
+.nosotros {
+    padding: var(--padding-section);
+}
+
+.nosotros-descripcion {
+    max-width: 450px;
+    font-size: 1.3rem;
+}
+
+.tarjeta-nosotros {
+    text-align: center;
+    background-color: var(--card-color);
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+
+/* Contacto */
+
+.contacto {
+    padding: 100px 0;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.contacto p {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.boton-contacto {
+    display: inline-block;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: 1px solid white;
+    border-radius: var(--radius-btn);
+}
+
+/* Footer */
+
+.footer {
+    padding: 30px 0 10px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+/* Responsive */
+
+/* Catalogo */
+
+@media (max-width: 768px) {
+    .tarjetas-catalogo{
+        flex-direction: column;
+    }
+}

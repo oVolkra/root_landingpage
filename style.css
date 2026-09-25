@@ -111,6 +111,17 @@ p {
     font-size: var(--texto-base);
     font-weight: 400;
     text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.site-header nav a:hover {
+    color: var(--primary-color);
+}
+
+.site-header nav a:focus-visible {
+    color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
 }
 
 /*Hero */

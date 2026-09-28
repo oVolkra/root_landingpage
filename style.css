@@ -168,11 +168,6 @@ p {
     padding: var(--padding-section); /* AGREGAR PADDING A LA SECCION COMPLETA */
 }
 
-.tarjetas-catalogo{
-    display: flex;
-    gap: 50px;
-}
-
 .titulo-catalogo{
     display: inline-block;
     background-color: var(--primary-color);
@@ -189,6 +184,16 @@ p {
     padding: 20px;
     border-radius: var(--radius-card);
     height: 100%;
+}
+
+.tarjeta-catalogo img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.tarjeta-catalogo .img-indoor {
+    object-position: center 75%;
 }
 
 /*Nosotros */
